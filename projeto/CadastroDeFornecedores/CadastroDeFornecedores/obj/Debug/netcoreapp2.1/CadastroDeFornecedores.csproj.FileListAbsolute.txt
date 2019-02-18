@@ -1,0 +1,14 @@
+C:\Users\Kobus\Desktop\Letícia\projeto\Fornecedores\Fornecedores\projeto\CadastroDeFornecedores\CadastroDeFornecedores\bin\Debug\netcoreapp2.1\CadastroDeFornecedores.deps.json
+C:\Users\Kobus\Desktop\Letícia\projeto\Fornecedores\Fornecedores\projeto\CadastroDeFornecedores\CadastroDeFornecedores\bin\Debug\netcoreapp2.1\CadastroDeFornecedores.runtimeconfig.json
+C:\Users\Kobus\Desktop\Letícia\projeto\Fornecedores\Fornecedores\projeto\CadastroDeFornecedores\CadastroDeFornecedores\bin\Debug\netcoreapp2.1\CadastroDeFornecedores.runtimeconfig.dev.json
+C:\Users\Kobus\Desktop\Letícia\projeto\Fornecedores\Fornecedores\projeto\CadastroDeFornecedores\CadastroDeFornecedores\bin\Debug\netcoreapp2.1\CadastroDeFornecedores.dll
+C:\Users\Kobus\Desktop\Letícia\projeto\Fornecedores\Fornecedores\projeto\CadastroDeFornecedores\CadastroDeFornecedores\obj\Debug\netcoreapp2.1\CadastroDeFornecedores.csprojAssemblyReference.cache
+C:\Users\Kobus\Desktop\Letícia\projeto\Fornecedores\Fornecedores\projeto\CadastroDeFornecedores\CadastroDeFornecedores\obj\Debug\netcoreapp2.1\CadastroDeFornecedores.csproj.CoreCompileInputs.cache
+C:\Users\Kobus\Desktop\Letícia\projeto\Fornecedores\Fornecedores\projeto\CadastroDeFornecedores\CadastroDeFornecedores\obj\Debug\netcoreapp2.1\CadastroDeFornecedores.RazorAssemblyInfo.cache
+C:\Users\Kobus\Desktop\Letícia\projeto\Fornecedores\Fornecedores\projeto\CadastroDeFornecedores\CadastroDeFornecedores\obj\Debug\netcoreapp2.1\CadastroDeFornecedores.RazorAssemblyInfo.cs
+C:\Users\Kobus\Desktop\Letícia\projeto\Fornecedores\Fornecedores\projeto\CadastroDeFornecedores\CadastroDeFornecedores\obj\Debug\netcoreapp2.1\CadastroDeFornecedores.AssemblyInfoInputs.cache
+C:\Users\Kobus\Desktop\Letícia\projeto\Fornecedores\Fornecedores\projeto\CadastroDeFornecedores\CadastroDeFornecedores\obj\Debug\netcoreapp2.1\CadastroDeFornecedores.AssemblyInfo.cs
+C:\Users\Kobus\Desktop\Letícia\projeto\Fornecedores\Fornecedores\projeto\CadastroDeFornecedores\CadastroDeFornecedores\obj\Debug\netcoreapp2.1\CadastroDeFornecedores.RazorTargetAssemblyInfo.cache
+C:\Users\Kobus\Desktop\Letícia\projeto\Fornecedores\Fornecedores\projeto\CadastroDeFornecedores\CadastroDeFornecedores\bin\Debug\netcoreapp2.1\CadastroDeFornecedores.pdb
+C:\Users\Kobus\Desktop\Letícia\projeto\Fornecedores\Fornecedores\projeto\CadastroDeFornecedores\CadastroDeFornecedores\obj\Debug\netcoreapp2.1\CadastroDeFornecedores.dll
+C:\Users\Kobus\Desktop\Letícia\projeto\Fornecedores\Fornecedores\projeto\CadastroDeFornecedores\CadastroDeFornecedores\obj\Debug\netcoreapp2.1\CadastroDeFornecedores.pdb
