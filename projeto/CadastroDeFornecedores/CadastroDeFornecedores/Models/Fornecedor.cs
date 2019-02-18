@@ -9,6 +9,8 @@ namespace CadastroDeFornecedores.Models
         public virtual string Nome { get; set; }
         public virtual string CPFCNPJ { get; set; }
         public virtual DateTime Cadastro { get; set; }
+        public virtual DateTime DataNascimento { get; set; }
+        public virtual string RG { get; set; }
 
         public Fornecedor()
         {

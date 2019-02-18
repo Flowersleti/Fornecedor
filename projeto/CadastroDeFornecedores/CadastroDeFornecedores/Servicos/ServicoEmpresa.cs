@@ -43,5 +43,10 @@ namespace CadastroDeFornecedores.Servicos
             var empresa = _empresaRepositorio.GetById(id);
             _empresaRepositorio.Delete(empresa);
         }
+
+        public void Editar(Empresa empresa)
+        {
+            _empresaRepositorio.Update(empresa);
+        }
     }
 }
