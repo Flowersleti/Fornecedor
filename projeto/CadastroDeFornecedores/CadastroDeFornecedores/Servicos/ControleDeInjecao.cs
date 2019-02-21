@@ -6,6 +6,7 @@ namespace CadastroDeFornecedores.Servicos
         public static ServicoEmpresa ServicoEmpresa;
         public static ServicoFornecedor ServicoFornecedor;
         public static ServicoTelefone ServicoTelefone;
+        public static ServicoEstado ServicoEstado;
 
         static ControleDeInjecao()
         {
@@ -17,6 +18,7 @@ namespace CadastroDeFornecedores.Servicos
             ServicoEmpresa = new ServicoEmpresa(empresaRepositorio, estadosRepositorio);
             ServicoFornecedor = new ServicoFornecedor(fornecedorRepositorio, empresaRepositorio);
             ServicoTelefone = new ServicoTelefone(telefoneRepositorio, fornecedorRepositorio);
+            ServicoEstado = new ServicoEstado(estadosRepositorio);
         }
     }
 }

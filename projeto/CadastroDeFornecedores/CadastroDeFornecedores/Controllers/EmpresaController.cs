@@ -8,10 +8,14 @@ namespace CadastroDeFornecedores.Controllers
     public class EmpresaController : Controller
     {
         private ServicoEmpresa _servicoEmpresa;
+        private ServicoEstado _servicoEstado;
+        private List<string> _estados;
 
         public EmpresaController()
         {
             _servicoEmpresa = ControleDeInjecao.ServicoEmpresa;
+            _servicoEstado = ControleDeInjecao.ServicoEstado;
+            _estados = _servicoEstado.BuscarTodosOsEstados();
         }
 
         public IActionResult Index()
@@ -23,19 +27,27 @@ namespace CadastroDeFornecedores.Controllers
         [HttpGet]
         public IActionResult Cadastrar()
         {
+            ViewBag.Estados = _estados;
             return View(new Empresa());
         }
 
         [HttpPost]
         public IActionResult Cadastrar([FromForm]Empresa empresa)
         {
-            return RedirectToAction("Index");
+            if (ModelState.IsValid)
+            {
+                _servicoEmpresa.Cadastrar(empresa);
+                return RedirectToAction("Index");
+            }
+            ViewBag.Estados = _estados;
+            return View(empresa);
         }
 
         [HttpGet]
         public IActionResult Editar(string id)
         {
             Empresa empresa = _servicoEmpresa.PegarPorId(id);
+            ViewBag.Estados = _estados;
             return View("Cadastrar", empresa);
         }
 
@@ -47,6 +59,7 @@ namespace CadastroDeFornecedores.Controllers
                 _servicoEmpresa.Editar(empresa);
                 return RedirectToAction("Index");
             }
+            ViewBag.Estados = _estados;
             return View("Cadastrar", empresa);
         }
 

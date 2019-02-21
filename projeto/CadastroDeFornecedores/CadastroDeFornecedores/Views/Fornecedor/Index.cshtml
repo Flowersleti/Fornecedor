@@ -1,0 +1,47 @@
+﻿@model List<CadastroDeFornecedores.Models.Fornecedor>
+@{
+    Layout = "_Layout";
+}
+@{
+    ViewBag.Title = "Fornecedores";
+}
+
+<a href="/empresa" class="btn btn-primary">Voltar</a>
+<a href="/fornecedor/cadastrar" class="btn btn-primary">Cadastrar</a>
+
+    <p class="display">Fornecedores de: @ViewBag.Empresa.NomeFantasia</p>
+
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">CPF/CNPJ</th>
+            <th scope="col">Data/Hora</th>
+            <th scope="col">Data de Nascimento</th>
+            <th scope="col">RG</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var fornecedor in Model)
+        {
+            <tr>
+                <td>
+                    <a href="/telefone" class="far fa-file-alt"></a>
+                </td>
+                <td>@fornecedor.Nome</td>
+                <td>@fornecedor.CPFCNPJ</td>
+                <td>@fornecedor.Cadastro</td>
+                <td>@fornecedor.DataNascimento</td>
+                <td>@fornecedor.RG</td>
+                <td>
+                    <a href="/fornecedor/editar/@fornecedor.Id" class="fas fa-edit"></a>
+                </td>
+                <td>
+                    <a href="/fornecedor/excluir/@fornecedor.Id" class="fas fa-trash-alt"></a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

@@ -15,16 +15,8 @@ namespace CadastroDeFornecedores.Servicos
             _estadosRepositorio = estadosRepositorio;
         }
 
-        public string Cadastrar(string nome, string cnpj, int uf)
+        public string Cadastrar(Empresa empresa)
         {
-            var siglaEstado = _estadosRepositorio.GetByCode(uf);
-            var empresa = new Empresa()
-            {
-                NomeFantasia = nome,
-                CNPJ = cnpj,
-                UF = siglaEstado,
-            };
-
             return _empresaRepositorio.Insert(empresa);
         }
 

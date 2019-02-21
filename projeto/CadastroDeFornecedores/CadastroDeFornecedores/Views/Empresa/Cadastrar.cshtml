@@ -1,11 +1,41 @@
-﻿
+﻿@model CadastroDeFornecedores.Models.Empresa
+
 @{
     Layout = "_Layout";
 }
 
-<form>
-    <div class="form-group">
-        <label for="exampleFormControlInput1">Nome Fantasia</label>
-        <input class="form-control" type="text" placeholder="Digite o nome fantasia">
+<form method="post">
+    <input type="hidden" name="id" value="@Model.Id" />
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="nomefantasia">Nome Fantasia</label>
+            <input name="nomefantasia" id="nomefantasia" class="form-control" type="text" value="@Model.NomeFantasia" placeholder="Digite o nome fantasia">
+            @Html.ValidationMessage("nomefantasia")
+        </div>
+
+        <div class="form-group col-md-4">
+            <label for="uf">UF</label>
+            <select name="uf" id="uf" class="form-control" value="@Model.UF">
+
+                @foreach (var estado in ViewBag.Estados)
+                {
+                    @if (estado == Model.UF)
+                    {
+                        <option selected>@estado</option>
+                    }
+                    else
+                    {
+                        <option>@estado</option>
+                    }
+                }
+            </select>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="cnpj">CNPJ</label>
+            <input name="cnpj" id="cnpj" class="form-control" type="text" value="@Model.CNPJ" placeholder="Digite o cnpj">
+            @Html.ValidationMessage("cnpj")
+        </div>
     </div>
+    <button type="submit" class="btn btn-primary">Salvar</button>
+    <a href="/empresa" class="btn btn-primary">Cancelar</a>
 </form>

@@ -29,7 +29,7 @@ namespace CadastroDeFornecedores.Repositorios
 
         public string GetByCode(int code)
         {
-            return _estados[code - 1];
+            return _estados[code];
         }
     }
 }
